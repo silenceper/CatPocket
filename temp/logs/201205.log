@@ -1,0 +1,586 @@
+Wed, 02 May 2012 12:25:01 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:25:55 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:09 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:12 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:13 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:13 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:13 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:14 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:26:14 +0000	[2]Cannot modify header information - headers already sent by (output started at D:\apache\apache\htdocs\maokoudai\data\config.inc.php:1)	\includes\subdomain.inc.php	21
+Wed, 02 May 2012 12:46:40 +0000	[2]require_once(file://///MOOSHENT-PC/ecmall/app/app/alipay/alipay_config.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory	\app\my_money.app.php	1497
+Wed, 02 May 2012 13:32:37 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 and  AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL 
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:41:24 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 and  AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL 
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:43:59 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 and  AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL 
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:55:17 +0000	[256]MySQL Error[1054]: Unknown column '1a' in 'where clause'
+MySQL Query:SELECT COUNT(*) as c FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1a and check_money=0 or check_cate=0 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL 
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:58:11 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_pri' at line 1
+MySQL Query:SELECT g.goods_id, g.store_id, g.type, g.goods_name, g.cate_id, g.cate_name, g.brand, g.spec_qty, g.spec_name_1, g.spec_name_2, g.if_show, g.closed, g.add_time, g.recommended, g.default_image, gs.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, s.region_id, s.region_name, s.credit_value, s.sgrade, s.cat_food gst.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_price,git.integral_state FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL  ORDER BY goods_id desc, s.sort_order  LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:58:21 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_pri' at line 1
+MySQL Query:SELECT g.goods_id, g.store_id, g.type, g.goods_name, g.cate_id, g.cate_name, g.brand, g.spec_qty, g.spec_name_1, g.spec_name_2, g.if_show, g.closed, g.add_time, g.recommended, g.default_image, gs.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, s.region_id, s.region_name, s.credit_value, s.sgrade, s.cat_food gst.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_price,git.integral_state FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL  ORDER BY goods_id desc, s.sort_order  LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:58:23 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_pri' at line 1
+MySQL Query:SELECT g.goods_id, g.store_id, g.type, g.goods_name, g.cate_id, g.cate_name, g.brand, g.spec_qty, g.spec_name_1, g.spec_name_2, g.if_show, g.closed, g.add_time, g.recommended, g.default_image, gs.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, s.region_id, s.region_name, s.credit_value, s.sgrade, s.cat_food gst.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_price,git.integral_state FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL  ORDER BY goods_id desc, s.sort_order  LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Wed, 02 May 2012 13:58:24 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_pri' at line 1
+MySQL Query:SELECT g.goods_id, g.store_id, g.type, g.goods_name, g.cate_id, g.cate_name, g.brand, g.spec_qty, g.spec_name_1, g.spec_name_2, g.if_show, g.closed, g.add_time, g.recommended, g.default_image, gs.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, s.region_id, s.region_name, s.credit_value, s.sgrade, s.cat_food gst.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_price,git.integral_state FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL  ORDER BY goods_id desc, s.sort_order  LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:10:51 +0000	[2]include(D:\apache\apache\htdocs\maokoudai/languages/sc-utf-8/admin/jfcade.lang.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory	\eccore\ecmall.php	242
+Thu, 03 May 2012 01:30:40 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:33:46 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:33:46 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:33:47 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:33:47 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:33:47 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:33:53 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:34:25 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:34:26 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:34:26 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:34:27 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:34:28 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:35:21 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:35:22 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:35:23 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:35:25 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:37:50 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:37:51 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.customer_id=member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:41:59 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:42:00 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:42:01 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:42:01 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:42:01 +0000	[256]MySQL Error[1054]: Unknown column 'store_card.card_num' in 'field list'
+MySQL Query:SELECT customer.*,store_card.card_num,member.reg_time,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:50:42 +0000	[256]MySQL Error[1054]: Unknown column 'member.reg_time' in 'field list'
+MySQL Query:SELECT customer.*,member.reg_time,customer.customer_id FROM ecm_customer customer WHERE store_id=23 ORDER BY buyer_id DESC LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:53:22 +0000	[256]MySQL Error[1052]: Column 'goods_id' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE goods_id = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL 
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 01:53:58 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' s.sort_order' at line 1
+MySQL Query:SELECT g.goods_id, g.store_id, g.type, g.goods_name, g.cate_id, g.cate_name, g.brand, g.spec_qty, g.spec_name_1, g.spec_name_2, g.if_show, g.closed, g.add_time, g.recommended, g.default_image, gs.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, s.region_id, s.region_name, s.credit_value, s.sgrade, s.cat_food, gst.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_price,git.integral_state FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE g.goods_id = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL  ORDER BY  , s.sort_order 
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 02:16:57 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, ' at line 1
+MySQL Query:SELECT g.goods_id, g.store_id, g.type, g.goods_name, g.cate_id, g.cate_name, g.brand, g.spec_qty, g.spec_name_1, g.spec_name_2, g.if_show, g.closed, g.add_time, g.recommended, g.default_image, g.taobao_url, g.paipai_url gs.spec_id, gs.spec_1, gs.spec_2, gs.color_rgb, gs.price, gs.stock, s.store_name, s.region_id, s.region_name, s.credit_value, s.sgrade, s.cat_food, gst.views, gst.sales, gst.comments,git.has_integral,git.max_exchange,git.bargin_price,git.integral_state FROM ecm_goods g LEFT JOIN ecm_goods_spec gs ON g.default_spec = gs.spec_id LEFT JOIN ecm_store s ON g.store_id = s.store_id LEFT JOIN ecm_goods_statistics gst ON g.goods_id = gst.goods_id LEFT JOIN ecm_goods_integral git ON g.goods_id=git.goods_id WHERE 1 = 1 AND gs.spec_id IS NOT NULL AND s.store_id IS NOT NULL  ORDER BY goods_id desc, s.sort_order  LIMIT 0,10
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 02:39:56 +0000	[256]MySQL Error[1054]: Unknown column 'close' in 'field list'
+MySQL Query:UPDATE ecm_goods SET if_show='0',close='1',is_checked='1' WHERE goods_id = 2
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:16:25 +0000	[256]MySQL Error[1054]: Unknown column 'store_id' in 'where clause'
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and store_id=35
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:25:28 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:25:52 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:25:54 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:25:54 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:40:16 +0000	[2]Invalid argument supplied for foreach()	\app\customer.app.php	80
+Thu, 03 May 2012 03:40:30 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE firstgm=1 and store_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 03:40:33 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE firstgm=1 and store_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:24:45 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:32:13 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'buyer_id=22and firstgm=1' at line 1
+MySQL Query:SELECT *,my_moneylog.id FROM ecm_my_moneylog my_moneylog WHERE store_id=35and buyer_id=22and firstgm=1
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:32:38 +0000	[256]MySQL Error[1054]: Unknown column 'store_id' in 'where clause'
+MySQL Query:SELECT *,my_moneylog.id FROM ecm_my_moneylog my_moneylog WHERE store_id=35 and buyer_id=22 and firstgm=1
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:33:03 +0000	[256]MySQL Error[1054]: Unknown column 'firstgm' in 'where clause'
+MySQL Query:SELECT *,my_moneylog.id FROM ecm_my_moneylog my_moneylog WHERE seller_id=35 and buyer_id=22 and firstgm=1
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:34:18 +0000	[256]MySQL Error[1054]: Unknown column 'seller_id1' in 'where clause'
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id1=2
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:34:29 +0000	[256]MySQL Error[1054]: Unknown column 'my_moneylog.sd' in 'field list'
+MySQL Query:SELECT my_moneylog.sd,my_moneylog.id FROM ecm_my_moneylog my_moneylog WHERE log_text='ËÆ¢ÂçïÂÆåÊàêÔºåÂ•ñÂä±ÁªôÂÆ¢Êà∑ÁöÑË¥°ÁåÆËµÑÈáë' and seller_id=2 ORDER BY id DESC
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:49:44 +0000	[256]MySQL Error[1054]: Unknown column 'log_text1' in 'where clause'
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE log_text1='Âá∫ÂîÆÂïÜÂìÅÔºåËµÑÈáëÂ∑≤ÂÖ•Ë¥¶' and seller_id=35
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 11:58:25 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE firstgm=1 and store_id=
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:07:17 +0000	[256]MySQL Error[1054]: Unknown column 'store_id1' in 'where clause'
+MySQL Query:SELECT distinct buyer_id,customer.customer_id FROM ecm_customer customer WHERE store_id1=35 and buyer_id=22 and firstgm=1
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:21:54 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in Array
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:24:04 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '45' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in 45
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:25:42 +0000	[256]MySQL Error[1054]: Unknown column 'firstgm1' in 'where clause'
+MySQL Query:SELECT customer.*,member.reg_time,member.user_name,customer.customer_id FROM ecm_customer customer LEFT JOIN ecm_member member ON customer.buyer_id = member.user_id WHERE firstgm1=1 and store_id=35 ORDER BY buyer_id DESC
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:26:44 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (23,22,)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:28:46 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:28:59 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:00 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:01 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:01 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:01 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:02 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:02 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:46 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:47 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:47 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:47 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:48 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:29:48 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23,22)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23,22)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:30:41 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '23 dsds 18,22 dsds 17)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (,23 dsds 18,22 dsds 17)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 12:31:43 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dsds 17)' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=35 and buyer_id in (23,22 dsds 17)
+Wrong File:  D:\apache\apache\htdocs\maokoudai\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Thu, 03 May 2012 13:56:27 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:30 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:33 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:35 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:37 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:39 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:42 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:44 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:46 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:48 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:51 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:53 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:55 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:56:57 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:57:00 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:57:02 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:57:13 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Thu, 03 May 2012 13:57:19 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host '1localhost' (11004)	\eccore\model\mysql.php	95
+Fri, 04 May 2012 11:16:32 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%ÊµÅÊ≤≥Êó±Ê†ë%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:17:15 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%ÊµÅÊ≤≥Êó±Ê†ë%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:17:23 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%ÊµÅÊ≤≥Êó±Ê†ë%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:25:11 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 11:26:56 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%ÊµÅÊ≤≥Êó±Ê†ë%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:27:17 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%ÊµÅÊ≤≥Êó±Ê†ë%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:27:24 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 11:43:20 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%1123%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:44:03 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%45353%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:45:46 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%dj%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:46:22 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%453%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:46:49 +0000	[256]MySQL Error[1052]: Column 'user_name' in where clause is ambiguous
+MySQL Query:SELECT COUNT(*) as c FROM ecm_member member LEFT JOIN ecm_my_money my_money ON member.user_id=my_money.user_id LEFT JOIN ecm_store s ON member.user_id=s.store_id WHERE 1=1 AND user_name like '%123.%'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 11:58:41 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 11:59:11 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 12:01:56 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 12:30:12 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 12:30:52 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 13:31:47 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 13:33:28 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 13:35:16 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 13:36:24 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:20:20 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=44 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 14:20:26 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=44 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 14:20:28 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=44 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 14:20:30 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=44 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 14:20:45 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=44 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Fri, 04 May 2012 14:31:12 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:32:02 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:32:30 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:35:32 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:37:06 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:37:14 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:41:30 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:42:11 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:42:21 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:49:16 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:50:11 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:50:22 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Fri, 04 May 2012 14:56:45 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=42 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 00:44:28 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=46 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 00:45:19 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+MySQL Query:SELECT COUNT(*) as c FROM ecm_my_moneylog my_moneylog WHERE caozuo=73 and seller_id=46 and buyer_id in ()
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[458]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 01:07:22 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 02:10:56 +0000	[256]MySQL Error[1062]: Duplicate entry '45a62d9ed6623c7ff5f4970ae5a09c68' for key 'PRIMARY'
+MySQL Query:INSERT INTO ecm_sessions SET sesskey = '45a62d9ed6623c7ff5f4970ae5a09c68', expiry = '1336185296', ip = '58.50.131.24', userid = '0', adminid = '0', data = ''
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[271]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 02:26:32 +0000	[256]MySQL Error[1062]: Duplicate entry '45a62d9ed6623c7ff5f4970ae5a09c68' for key 'PRIMARY'
+MySQL Query:INSERT INTO ecm_sessions SET sesskey = '45a62d9ed6623c7ff5f4970ae5a09c68', expiry = '1336186232', ip = '58.50.131.24', userid = '0', adminid = '0', data = ''
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[271]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 02:26:54 +0000	[256]MySQL Error[1062]: Duplicate entry '45a62d9ed6623c7ff5f4970ae5a09c68' for key 'PRIMARY'
+MySQL Query:INSERT INTO ecm_sessions SET sesskey = '45a62d9ed6623c7ff5f4970ae5a09c68', expiry = '1336186254', ip = '58.50.131.24', userid = '0', adminid = '0', data = ''
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[271]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 02:27:01 +0000	[256]MySQL Error[1062]: Duplicate entry '45a62d9ed6623c7ff5f4970ae5a09c68' for key 'PRIMARY'
+MySQL Query:INSERT INTO ecm_sessions SET sesskey = '45a62d9ed6623c7ff5f4970ae5a09c68', expiry = '1336186261', ip = '58.50.131.24', userid = '0', adminid = '0', data = ''
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[271]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 02:28:29 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 02:29:06 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 02:31:41 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 02:39:50 +0000	[256]MySQL Error[1030]: Got error 134 from storage engine
+MySQL Query:SELECT data, expiry, is_overflow FROM ecm_sessions WHERE sesskey = '45a62d9ed6623c7ff5f4970ae5a09c68'
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[589]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 02:41:12 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:02:32 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:03:03 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:13:25 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:50:16 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:52:45 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:53:21 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:53:56 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 07:54:08 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 08:34:27 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 08:35:21 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 08:35:24 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 08:36:25 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 08:36:48 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 08:37:05 +0000	[2]fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to :25 (”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+)	\includes\libraries\class.smtp.php	89
+Sat, 05 May 2012 09:34:21 +0000	[256]MySQL Error[1054]: Unknown column 'close' in 'field list'
+MySQL Query:UPDATE ecm_goods SET if_show='1',is_checked='1',close='0' WHERE goods_id = 86
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 09:37:04 +0000	[256]MySQL Error[1054]: Unknown column 'close' in 'field list'
+MySQL Query:UPDATE ecm_goods SET if_show='1',is_checked='1',close='0' WHERE goods_id = 86
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 13:47:20 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336225640 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 14:02:22 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336226542 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 14:20:05 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336227605 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 14:35:49 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336228549 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 14:50:55 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336229455 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 15:06:00 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336230360 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 15:21:50 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336231310 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 15:38:30 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336232310 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 15:53:33 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336233213 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 16:09:59 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336234199 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 16:25:14 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336235114 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 16:42:02 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336236122 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 16:58:17 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336237097 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 17:13:55 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336238035 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 17:29:19 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336238959 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 17:46:31 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336239991 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 18:01:54 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336240914 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 18:18:04 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336241884 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 18:35:55 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336242955 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 18:51:56 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336243916 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 19:07:01 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336244821 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 19:23:20 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336245800 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 19:40:06 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336246806 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 19:56:30 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336247790 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 20:11:34 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336248694 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 20:26:46 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336249606 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 20:42:23 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336250543 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 20:59:26 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336251566 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 21:16:10 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336252570 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 21:31:48 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336253508 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 21:48:49 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336254529 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 22:05:58 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336255558 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 22:21:11 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336256471 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 22:36:35 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336257395 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 22:51:40 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336258300 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 23:07:23 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336259243 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 23:22:30 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336260150 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 23:37:44 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336261064 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sat, 05 May 2012 23:52:44 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336261964 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 00:07:49 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336262869 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 00:23:21 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336263801 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 00:41:18 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336264878 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 00:58:44 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336265924 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 01:13:45 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336266825 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 01:28:51 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336267731 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 01:44:46 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'where clause'
+MySQL Query:SELECT jf_card_id,store_card.jf_card_id FROM ecm_store_card store_card WHERE add_time+1296000<1336268686 AND state=0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 02:23:59 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'field list'
+MySQL Query:INSERT INTO ecm_store_card(store_id,card_num,jf_count,add_time,state) VALUES('23','asd9F8B8D3C7E','10','1336271039','0')
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[299]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 02:25:20 +0000	[256]MySQL Error[1054]: Unknown column 'state' in 'field list'
+MySQL Query:INSERT INTO ecm_store_card(store_id,card_num,jf_count,add_time,state) VALUES('2','8B0E0D3A4B','2','1336271120','0')
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[299]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 11:56:14 +0000	[256]MySQL Error[1054]: Unknown column 'status1' in 'where clause'
+MySQL Query:UPDATE ecm_order SET status='20',pay_time='1336305374' WHERE order_id = 163 AND status1=11
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 11:56:58 +0000	[256]MySQL Error[1054]: Unknown column 'status1' in 'where clause'
+MySQL Query:UPDATE ecm_order SET status='20',pay_time='1336305418' WHERE order_id = 162 AND status1=11
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 11:59:44 +0000	[256]MySQL Error[1054]: Unknown column 'status1' in 'where clause'
+MySQL Query:UPDATE ecm_order SET status='20',pay_time='1336305584' WHERE order_id = 164 AND status1=11
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 11:59:58 +0000	[256]MySQL Error[1054]: Unknown column 'status1' in 'where clause'
+MySQL Query:UPDATE ecm_order SET status='20',pay_time='1336305598' WHERE order_id = 163 AND status1=11
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 12:00:07 +0000	[256]MySQL Error[1054]: Unknown column 'status1' in 'where clause'
+MySQL Query:UPDATE ecm_order SET status='20',pay_time='1336305607' WHERE order_id = 164 AND status1=11
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Sun, 06 May 2012 13:27:34 +0000	[2]require_once(app/alipays/lib/alipay_notify.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory	\app\my_money.app.php	1457
+Mon, 07 May 2012 01:51:22 +0000	[2]include(C:\apache\htdocs/includes/payments//.payment.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory	\app\frontend.base.php	445
+Mon, 07 May 2012 02:27:43 +0000	[256]MySQL Error[1054]: Unknown column '220120507020549_0.1' in 'where clause'
+MySQL Query:SELECT *,mymoney_czlog.cz_id FROM ecm_mymoney_czlog mymoney_czlog WHERE czmoney_id=220120507020549_0.1 and user_id=2
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Tue, 08 May 2012 09:32:18 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:UPDATE ecm_my_money SET money='0' WHERE user_id=
+Wrong File:  C:\apache\htdocs\eccore\model\model.base.php[523]	\eccore\model\mysql.php	286
+Wed, 09 May 2012 14:53:24 +0000	[2]Missing argument 2 for MallbaseApp::_get_payment(), called in C:\apache\htdocs\app\my_money.app.php on line 1343 and defined	\app\frontend.base.php	442
+Thu, 10 May 2012 08:27:18 +0000	[256]MySQL Error[1054]: Unknown column 'payment_code1' in 'where clause'
+MySQL Query:SELECT *,payment.payment_id FROM ecm_payment payment WHERE payment_code1='' AND store_id = 0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 10 May 2012 08:31:51 +0000	[256]MySQL Error[1054]: Unknown column 'payment_code1' in 'where clause'
+MySQL Query:SELECT *,payment.payment_id FROM ecm_payment payment WHERE payment_code1='alipay' AND store_id = 0
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 10 May 2012 15:37:28 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT *,ss_jifen.ss_id FROM ecm_ss_jifen ss_jifen WHERE ss_id=
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286
+Thu, 10 May 2012 22:13:02 +0000	[2]mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '58.215.164.140' (10060)	\eccore\model\mysql.php	95
+Fri, 11 May 2012 08:23:01 +0000	[256]MySQL Error[1064]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+MySQL Query:SELECT *,ss_jifen.ss_id FROM ecm_ss_jifen ss_jifen WHERE ss_id=
+Wrong File:  C:\apache\htdocs\eccore\model\mysql.php[534]	\eccore\model\mysql.php	286

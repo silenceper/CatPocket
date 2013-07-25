@@ -1,0 +1,9 @@
+<?php
+
+return array(
+    'yu_e'           => '货到付款',
+    'yu_e_desc'      => '开通城市: 请在配送方式里设置“可货到付款地区”开通，手续费:**<a href="index.php?app=my_shipping" style="color:red; font-weight:bold;" target="_blank">点此开通<a>',
+    'yu_e_currency'  => '所有货币',
+);
+
+?>

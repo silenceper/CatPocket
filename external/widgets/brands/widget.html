@@ -1,0 +1,39 @@
+<div class="brand">
+  <div class="hd">
+    <h2>品牌折扣</h2>
+  </div>
+  <div data-widget-type="Carousel" data-widget-config="{&#39;effect&#39;:&#39;scrollx&#39;,&#39;easing&#39;:&#39;easeOutStrong&#39;,&#39;steps&#39;:4,&#39;circular&#39;:false,&#39;prevBtnCls&#39;:&#39;prev&#39;,&#39;nextBtnCls&#39;:&#39;next&#39;,&#39;disableBtnCls&#39;:&#39;disable&#39;,&#39;autoplay&#39;:&#39;true&#39;}" class="KS_Widget section scrollable" id="J_BrandCarousel"> <span class="prev" id="scroller-prev">● </span> <span class="next disable" id="scroller-next">● </span>
+    <div class="brand-scroller" style="position: relative; ">
+      <div class="ks-switchable-content" style="position: absolute; width: 1648px; -webkit-transition-duration: 500ms; -webkit-transition-timing-function: cubic-bezier(0.1, 0.5, 0.1, 1); left: -824px; -webkit-transition-property: none; "> 
+        
+        <!--{foreach from=$widget_data item=goods}-->
+        
+        <li style="display: block; float: left; "> 
+        <a style="display: block; float: left;" href="index.php?app=goods&id={$goods.goods_id}" target="_blank"> 
+        	<span class="brand-name" title="{$goods.b_all}">{$goods.brand|escape}</span> 
+            <img title="{$goods.goods_name|escape}" alt="{$goods.goods_name|escape}" width="170" height="170" src="{$goods.default_image}"/> 
+            <span class="title" style="width:170px;" >
+            	<span title="{$goods.goods_name|escape}" style="float:left;"> {$goods.goods_name|escape}</span> 
+                <b title="送积分" style="float:right;"> {$goods.has_integral}</b>
+            </span> 
+            <span class="price"><del> {$goods.price|price}</del></span>
+          	<p class="price qz-price">
+                <em> {$goods.bargin_price}</em>
+                {if $goods.integral_state==1}
+                <span class="money">+{$goods.max_exchange}</span>
+				<span style="font-size:11px;color:red;">积分</span>
+                {/if}
+            </p>
+        </a> 
+        </li>
+        
+        <!--{/foreach}--> 
+        
+      </div>
+    </div>
+    <ul class="ks-switchable-nav">
+      <li class="">1</li>
+      <li class="ks-active">2</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+{include file="header.html"}
+<style> 
+.ovrit 
+{ 
+background: #FFCC33; 
+} 
+.cross 
+{ 
+background: #FF0000; 
+} 
+
+.titl 
+{ 
+background: #f0f0f0; 
+} 
+</style>
+<div id="rightTop">
+    <p>{$lang.change_jifen}</p>
+    <ul class="subnav">
+		<li><a class="btn3" href="index.php?app=integral">{$lang.index_jifenliebiao}</a></li>
+		<li><span>{$lang.change_jifen}</span></li>
+		<li><a class="btn3" href="index.php?app=integral&act=user_jifen_log">积分流水</a></li>
+		
+    </ul>
+</div>
+
+<div class="info">
+
+            <table class="infoTable">
+    <form method="post">
+            <tr>
+                <th class="paddingT15">{$lang.user_name}</th>
+                <td class="paddingT15 wordSpacing5">
+				{$integral.user_name}
+				</td>
+            </tr>
+            <tr>
+                <th class="paddingT15">{$lang.recharge_jifen}</th>
+              <td class="paddingT15 wordSpacing5">
+				<input name="jifennum" type="text" id="jifennum" value="" size="10">
+				{$lang.jifen_fen}
+				</td>
+            </tr>
+			<!--{if $integral.store_name!=''}-->
+            <tr>
+                <th class="paddingT15">{$lang.seller_edu}</th>
+              <td class="paddingT15 wordSpacing5">
+				<input name="jifenedu" type="text" id="jifenedu" value="{$integral.seller_edu}" size="10">
+				{$lang.jifen_fen}
+				</td>
+            </tr>                      
+            <!--{/if}-->
+            <tr>
+                <th class="paddingT15">{$lang.jifen_caozuoleixing}</th>
+           <td class="paddingT15 wordSpacing5">{$lang.jifen_add}<input name="jia_or_jian" type="radio" value="jia" checked="CHECKED" />
+		   {$lang.jifen_drop}<input type="radio" name="jia_or_jian" value="jian" />
+		   <font color="#FF0000">{$lang.zhuyixuanze}</font>
+			  </td>
+            </tr>
+<!--{foreach from=$index item=val}-->
+            <tr>
+                <th class="paddingT15">{$lang.jifen_now}</th>
+                <td class="paddingT15 wordSpacing5">
+				<font color="#FF0000">{$val.money}</font>
+				</td>
+            </tr>
+<!--{/foreach}-->
+			<tr>
+                <th class="paddingT15">{$lang.jifen_jiluliushui}</th>		
+                <td class="paddingT15 wordSpacing5">
+				
+
+
+<input name="log_text" type="text" id="log_text" value="{$visitor.user_name}{$lang.admin_change_jf}" size="60">
+
+
+
+<div id="time_from2">
+
+</div>
+</td>
+            </tr>
+	
+            <tr>
+            <th></th>
+            <td class="ptb20">
+                <input class="formbtn" type="submit" name="Submit" value="{$lang.submit}" />
+                <input class="formbtn" type="reset" name="Submit2" value="{$lang.reset}" />
+            </td>
+            </tr>
+    </form>
+
+
+      </table>	
+</div>
+{include file="footer.html"}

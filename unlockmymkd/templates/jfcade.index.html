@@ -1,0 +1,68 @@
+{include file="header.html"}
+<div id="rightTop">
+    <p>{$lang.index_jifencade}</p>
+</div>
+
+<div class="mrightTop">
+ 	<div class="fontl">
+    <form method="get">
+       <div class="left">
+          <input type="hidden" name="app" value="jfcade" />
+          <input type="hidden" name="act" value="index" />
+          <select class="querySelect" name="field_name">{html_options options=$query_fields selected=$smarty.get.field_name}
+          </select>
+          <input class="queryInput" type="text" name="field_value" value="{$smarty.get.field_value|escape}" />
+          <input type="submit" class="formbtn" value="{$lang.query}" />
+      </div>
+      <!--{if $filtered}-->
+      <a class="left formbtn1" href="index.php?app=jfcade">{$lang.cancel_query}</a>
+      <!--{/if}-->
+    </form>
+  </div>
+  <div class="fontr">{include file=page.top.html}</div>
+</div>
+<div class="tdare">
+  <table width="100%" cellspacing="0" class="dataTable">
+    <!--{if $cards}-->
+    <tr class="tatr1">
+      <td width="20" class="firstCell"></td>
+      <td>{$lang.cardid}</td>
+      <td>{$lang.store_id}</td>
+      <td>{$lang.store_name}</td>
+      <td>{$lang.mianzhi}</td>
+      <td>{$lang.add_time}</td>
+      <td>{$lang.end_time}</td>
+      <td>{$lang.state}</td>
+      <td>{$lang.customers}</td>
+    </tr>
+    <!--{/if}-->
+    <!--{foreach from=$cards item=card}-->
+    <tr class="tatr2">
+        <td class="firstCell"></td>
+        <td>{$card.jf_card_id|escape}</td>
+        <td>{$card.store_id|escape}</td>
+        <td>{$card.store_name|escape}</td>
+        <td style="color:#F60">{$card.jf_count}</td>
+        <td>{$card.add_time|date:complete}</td>
+        <td>{$card.end_time|date:complete}</td>
+        <!--{if $card.c_state=='0'}-->
+        <td style="color:#F60">未使用</td>   
+        <!--{elseif $card.c_state=='1'}-->  
+        <td>已使用</td>  
+        <!--{/if}-->	
+        <td>{$card.user_name}</td>
+    </tr>
+    <!--{foreachelse}-->
+    <tr class="no_data">
+      <td colspan="7">{$lang.no_data}</td>
+    </tr>
+    <!--{/foreach}-->
+  </table>
+  <!--{if $cards}-->
+  <div id="dataFuncs">
+    <div class="pageLinks">{include file=page.bottom.html}</div>
+    <div class="clear"></div>
+  </div>
+  <!--{/if}-->
+</div>
+{include file="footer.html"}

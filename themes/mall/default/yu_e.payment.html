@@ -1,0 +1,30 @@
+{include file="header.html"}
+{include file="curlocal.html"}
+
+
+<div class="content">
+    <form action="index.php?app=cashier&act=payment&order_id={$order.order_id}" method="POST" id="payment">
+    <div class="module_common">
+        <div class="step_main">
+            <div class="order_information">
+                <h3>
+                    <b>{$lang.order_sn}&nbsp;:&nbsp;<span>{$order.order_sn}</span></b>
+                    <b>{$lang.order_amount}&nbsp;:&nbsp;<span>{$order.order_amount|price}</span></b>
+                </h3>
+                <p><a href="{url app=buyer_order}" target="_blank">{$lang.member_view_order}</a></p>
+                <input type="hidden" id="payment_id" name="payment_id" value="{$pay_id}"/>
+            </div>
+
+            <div class="make_sure">
+            	<p style="width:300px;float:left;"><label>{$lang.zf_password}：</label><input type="password" class="text" id="zf_pass" name="zf_pass" /></p>
+                <p style="width:200px;float:left;">
+                    <a href="javascript:$('#payment').submit();" class="btn">{$lang.confirm_pay}</a>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </form>
+</div>
+
+{include file="footer.html"}

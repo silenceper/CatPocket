@@ -1,0 +1,13 @@
+<?php
+
+return array(
+    'name'      => 'modbox',
+    'display_name'  => '商品类别推荐',
+    'author'    => 'CatPocket Team',
+    'website'   => 'http://www.maokoudai.com',
+    'version'   => '1.0',
+    'desc'      => '能展示6个有图片和文字的商品，商品数据从推荐类型中取',
+    'configurable'  => true,
+);
+
+?>

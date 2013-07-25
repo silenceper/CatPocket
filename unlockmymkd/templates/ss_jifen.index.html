@@ -1,0 +1,69 @@
+{include file="header.html"}
+<script type="text/javascript">
+$(function(){
+    $('#add_time_from').datepicker({dateFormat: 'yy-mm-dd'});
+    $('#add_time_to').datepicker({dateFormat: 'yy-mm-dd'});
+});
+</script>
+<div id="rightTop">
+    <p>{$lang.ss_jifen_manage}</p>
+    <ul class="subnav">
+        <li><span>{$lang.manage}</span></li>
+    </ul>
+</div>
+<div class="mrightTop">
+    <div class="fontl">
+        <form method="get">
+             <div class="left">
+                <input type="hidden" name="app" value="ss" />
+                <input type="hidden" name="act" value="index" />
+                <select class="querySelect" name="field">{html_options options=$search_options selected=$smarty.get.field}
+                </select>:<input class="queryInput" type="text" name="search_name" value="{$query.search_name|escape}" />
+                {$lang.add_time_from}:<input class="queryInput2" type="text" value="{$query.add_time_from}" id="add_time_from" name="add_time_from" class="pick_date" />
+                {$lang.add_time_to}:<input class="queryInput2" type="text" value="{$query.add_time_to}" id="add_time_to" name="add_time_to" class="pick_date" />
+                <input type="submit" class="formbtn" value="{$lang.query}" />
+            </div>
+            <!--{if $filtered}-->
+            <a class="left formbtn1" href="index.php?app=ss_jifen">{$lang.cancel_query}</a>
+            <!--{/if}-->
+        </form>
+    </div>
+    <div class="fontr">
+        {if $refunds}{include file=page.top.html}{/if}
+    </div>
+</div>
+<div class="tdare">
+    <table width="100%" cellspacing="0" class="dataTable">
+        <!--{if $jifens}-->
+        <tr class="tatr1">
+            <td width="10%" class="firstCell"><span ectype="order_by" fieldname="seller_id">{$lang.buyer_name}</span></td>
+            <td width="13%"><span ectype="order_by" fieldname="order_sn">{$lang.seller_name}</span></td>
+            <td width="13%"><span ectype="order_by" fieldname="add_time">{$lang.jifen}</span></td>
+            <td width="10%"><span ectype="order_by" fieldname="buyer_name">{$lang.add_time}</span></td>
+            <td width="10%">{$lang.status}</td>
+            <td width="10%">{$lang.handle}</td>
+        </tr>
+        <!--{/if}-->
+        <!--{foreach from=$jifens item=order}-->
+        <tr class="tatr2">
+            <td class="firstCell">{$order.buyer_name|escape}</td>
+            <td>{$order.seller_name}&nbsp;&nbsp;<!--{if $order.extension eq 'groupbuy'}-->[{$lang.groupbuy}]<!--{/if}--></td>
+            <td>{$order.jifen|escape}</td>
+            <td>{$order.add_time|date:complete}</td>
+            <td><!--{if $order.ss_status==0}-->新建申述<!--{elseif $order.ss_status==1}-->申述已完成<!--{/if}--></td>
+            <td><a href="index.php?app=ss_jifen&amp;act=view&amp;id={$order.ss_id}">{$lang.refund}</a></td>
+        </tr>
+        <!--{foreachelse}-->
+        <tr class="no_data">
+            <td colspan="7">{$lang.no_data}</td>
+        </tr>
+        <!--{/foreach}-->
+    </table>
+    <div id="dataFuncs">
+        <div class="pageLinks">
+            {if $refunds}{include file=page.bottom.html}{/if}
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file="footer.html"}

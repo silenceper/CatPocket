@@ -1,0 +1,88 @@
+{include file="header.html"}
+<script language="javascript">
+$(function(){
+    $('#sotime,#endtime').datepicker({dateFormat: 'yy-mm-dd'});
+});
+</script>
+<div id="rightTop">
+    <p>积分流水</p>
+    <ul class="subnav">
+		<li><a class="btn3" href="index.php?app=integral">{$lang.index_jifenliebiao}</a></li>
+		<li><span>积分流水</span></li>
+		
+    </ul>
+</div>
+
+<div class="mrightTop">
+    <div class="fontr">
+
+    </div>
+</div>
+
+<div class="tdare">
+    <table width="100%" cellspacing="0">
+
+        <tr class="tatr1">
+        	<td width="20">&nbsp;</td>
+            <td align="left">对象会员</td>
+            <td>操作类型</td>
+            <td>操作日志</td>
+            <td width="120">积分数</td>
+			<td width="120">操作时间</td>
+            <td align="center">操作人</td>
+        </tr>
+
+        <!--{foreach from=$index item=val key=key}-->
+        <tr class="tatr2">
+        	<td width="20">&nbsp;</td>
+            <td align="left"><b>{$val.recieve_name}</b></td>
+            <td>
+            <!--{if $val.state=='1'}-->
+            买入商品使用积分
+            <!--{elseif $val.state=='2'}-->
+            买入商品获得积分
+            <!--{elseif $val.state=='3'}-->
+            卖出商品获得积分
+            <!--{elseif $val.state=='4'}-->
+            卖出商品消耗积分
+            <!--{elseif $val.state=='5'}-->
+            管理员增加积分
+            <!--{elseif $val.state=='6'}-->
+            管理员减少积分
+            <!--{elseif $val.state=='7'}-->
+            管理员变更额度
+            <!--{elseif $val.state=='8'}-->
+            卖家生成礼品卡消耗
+            <!--{elseif $val.state=='9'}-->
+            卖家礼品卡过期返还积分
+            <!--{elseif $val.state=='10'}-->
+            买家使用礼品卡获得积分
+            <!--{elseif $val.state=='11'}-->
+            购买积分
+            <!--{elseif $val.state=='12'}-->
+            积分兑换物品
+            <!--{else}-->
+            其它途径
+            <!--{/if}-->
+            </td>
+            <td>{$val.log_text}</td>
+            <td><font color="#FF0000">{$val.jifen}</font></td>
+			<td>{$val.add_time|date:y-m-d H:i:s}</td>
+            <td class="table_center">{$val.user_name}</td>
+
+
+        </tr>
+        <!--{foreachelse}-->
+        <tr class="no_data">
+            <td colspan="7">{$lang.no_data}</td>
+        </tr>
+        <!--{/foreach}-->
+    </table>
+    <!--{if $index}-->
+<div id="dataFuncs">
+    <div class="pageLinks">{include file=page.bottom.html}</div>
+    <div class="clear"></div>
+  </div>
+  <!--{/if}-->
+</div>
+{include file="footer.html"}

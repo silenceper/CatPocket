@@ -1,0 +1,59 @@
+{include file="header.html"}
+<script language="javascript">
+$(function(){
+    $('#sotime,#endtime').datepicker({dateFormat: 'yy-mm-dd'});
+});
+</script>
+<div id="rightTop">
+    <p>举报管理</p>
+</div>
+
+<div class="mrightTop">
+    <div class="fontr">
+
+    </div>
+</div>
+
+<div class="tdare">
+    <table width="100%" cellspacing="0">
+
+        <tr class="tatr1">
+        	<td width="20">&nbsp;</td>
+            <td width="40">ID</td>
+            <td align="left">商品名</td>
+            <td>店铺名</td>
+            <td>举报类型</td>
+            <td>举报人</td>
+            <td width="120">举报时间</td>
+			<td width="120">当前状态</td>
+            <td align="center">操作</td>
+        </tr>
+
+        <!--{foreach from=$index item=val key=key}-->
+        <tr class="tatr2">
+        	<td width="20">&nbsp;</td>
+            <td width="40">{$val.goods_id}</td>
+            <td align="left">{$val.goods_name}</td>
+            <td>{$val.store_name}</td>
+            <td><!--{if $val.jubao_cate==1}-->虚标价格<!--{elseif $val.jubao_cate==2}-->其它<!--{/if}--></td>
+            <td>{$val.user_name}</td>
+			<td>{$val.addtime|date:y-m-d H:i:s}</td>
+            <td class="table_center"><!--{if $val.state==0}-->未确认<!--{elseif $val.state==1}-->已确认<!--{/if}--></td>
+            <td><a href="index.php?app=jubaogl&act=view&id={$val.id}">查看</a>&nbsp;|&nbsp;<a href="index.php?app=jubaogl&act=agree&id={$val.id}">确认</a>&nbsp;|&nbsp;<a href="index.php?app=jubaogl&act=drop&id={$val.id}">删除</a></td>
+
+
+        </tr>
+        <!--{foreachelse}-->
+        <tr class="no_data">
+            <td colspan="7">{$lang.no_data}</td>
+        </tr>
+        <!--{/foreach}-->
+    </table>
+    <!--{if $index}-->
+<div id="dataFuncs">
+    <div class="pageLinks">{include file=page.bottom.html}</div>
+    <div class="clear"></div>
+  </div>
+  <!--{/if}-->
+</div>
+{include file="footer.html"}

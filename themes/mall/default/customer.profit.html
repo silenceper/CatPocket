@@ -1,0 +1,60 @@
+{include file=member.header.html}
+<div class="content">
+    <div class="totline"></div><div class="botline"></div>
+    {include file=member.menu.html}
+    <div id="right">
+
+        {include file=member.submenu.html}
+        
+        <div class="wrap margin1">
+            <div class="public table">
+				<div class="information_index" style="overflow:hidden; margin: 0px 0 -15px;">
+                    <span>累计已收入：<span style="color:#FF6600;font-size:14px;font-weight:bold;">{$count_all|price}</span></span>
+                    <span style="padding-left:100px;">本月预期收入：<span style="color:#FF6600;font-size:14px;font-weight:bold;">{$pre_count|price}</span></span>	<span style="padding-left:100px;">本月已收入：<span style="color:#FF6600;font-size:14px;font-weight:bold;">{$current_count|price}</span></span>
+                </div>
+             </div>
+        </div>
+
+        <div class="wrap">
+            <div class="public table">
+                <table>
+                    <!--{if $my_moneylog_list}-->
+  
+                    <tr class="line_bold">
+                        <th>{$lang.customer_id}</th>
+                        <th class="width3">{$lang.in_price}</th>
+                        <th>{$lang.handle_time}</th>
+                    </tr>
+                    <!--{/if}-->
+                    <!--{foreach from=$my_moneylog_list item=my_moneylog name=v}-->
+                    <!--{if $smarty.foreach.v.last}--><tr class="line_bold tr_align"><!--{else}--><tr class="line tr_align"><!--{/if}-->
+                        <td>{$my_moneylog.buyer_name|escape}</td>
+                        <td>{$my_moneylog.money|escape}</td>
+                        <td>{$my_moneylog.add_time|date:complete}</td>
+                    </tr>
+                    <!--{foreachelse}-->
+                    <tr>
+                        <td colspan="3" class="member_no_records padding6">{$lang.no_records}</td>
+                    </tr>
+                    <!--{/foreach}-->
+                </table>
+            </div>
+            <div class="wrap_bottom"></div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="adorn_right1"></div>
+        <div class="adorn_right2"></div>
+        <div class="adorn_right3"></div>
+        <div class="adorn_right4"></div>
+    </div>
+
+    <div class="clear"></div>
+
+
+
+
+</div>
+<iframe id='iframe_post' name="iframe_post" frameborder="0" width="0" height="0">
+</iframe>
+{include file=footer.html}

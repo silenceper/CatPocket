@@ -1,0 +1,191 @@
+﻿<script type="text/javascript" src="{lib file=goodsinfo.js}" charset="utf-8"></script>
+<script type="text/javascript">
+//<!CDATA[
+/* buy */
+function buy_direction()
+{
+	if (goodsspec.getSpec() == null)
+    {
+        alert(lang.select_specs);
+        return;
+    }
+    var spec_id = goodsspec.getSpec().id;
+
+    var quantity = $("#quantity").val();
+    if (quantity == '')
+    {
+        alert(lang.input_quantity);
+        return;
+    }
+    if (parseInt(quantity) < 1)
+    {
+        alert(lang.invalid_quantity);
+        return;
+    }
+	go('index.php?app=cart&act=add_only&spec_id='+spec_id+'&quantity='+quantity+'&store_id={$store.store_id}');
+}
+
+function buy()
+{
+    if (goodsspec.getSpec() == null)
+    {
+        alert(lang.select_specs);
+        return;
+    }
+    var spec_id = goodsspec.getSpec().id;
+
+    var quantity = $("#quantity").val();
+    if (quantity == '')
+    {
+        alert(lang.input_quantity);
+        return;
+    }
+    if (parseInt(quantity) < 1)
+    {
+        alert(lang.invalid_quantity);
+        return;
+    }
+    add_to_cart(spec_id, quantity);
+}
+
+/* add cart */
+function add_to_cart(spec_id, quantity)
+{
+    var url = SITE_URL + '/index.php?app=cart&act=add';
+    $.getJSON(url, {'spec_id':spec_id, 'quantity':quantity}, function(data){
+        if (data.done)
+        {
+            $('.bold_num').text(data.retval.cart.kinds);
+            $('.bold_mly').html(price_format(data.retval.cart.amount));
+            $('.ware_cen').slideDown('slow');
+            setTimeout(slideUp_fn, 5000);
+        }
+        else
+        {
+            alert(data.msg);
+        }
+    });
+}
+
+var specs = new Array();
+<!--{foreach from=$goods._specs item=spec}-->
+specs.push(new spec({$spec.spec_id}, '{$spec.spec_1|escape}', '{$spec.spec_2|escape}', {$spec.price}, {$spec.stock}));
+<!--{/foreach}-->
+var specQty = {$goods.spec_qty};
+var defSpec = {$goods.default_spec|escape};
+var goodsspec = new goodsspec(specs, specQty, defSpec);
+//]]>
+</script>
+<div class="ware_title" style="height:40px;">
+<h2 align="left" style="width:80%;float:left;" title="{$goods.g_all}">&nbsp;&nbsp;&nbsp;&nbsp;{$goods.goods_name|escape}</h2><span style="float:right;width:10%;"><a href="index.php?app=goods&amp;act=jubao&id={$goods.goods_id}&store_id={$store.store_id}" target="_blank">举报该商品</a></span>
+</div>
+<div class="ware_info">
+    <div class="ware_pic">
+        <div class="big_pic">
+            <a href="javascript:;"><span class="jqzoom"><img src="{$goods._images.0.thumbnail|default:$default_image}" width="300" height="300" jqimg="{$goods._images.0.image_url}" /></span></a>
+        </div>
+
+        <div class="bottom_btn">
+            <!--<a class="collect" href="javascript:collect_goods({$goods.goods_id});" title="淘宝"></a>-->
+            <div class="left_btn"></div>
+            <div class="right_btn"></div>
+            <div class="ware_box">
+                <ul>
+                    <!--{foreach from=$goods._images item=goods_image name=fe_goods_image}-->
+                    <li {if $smarty.foreach.fe_goods_image.first}class="ware_pic_hover"{/if} bigimg="{$goods_image.image_url}"><img src="{$goods_image.thumbnail}" width="55" height="55" /></li>
+                    <!--{/foreach}-->
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                var btn_list_li = $("#btn_list > li");
+                btn_list_li.hover(function(){
+                    $(this).find("ul:not(:animated)").slideDown("fast");
+                },function(){
+                    $(this).find("ul").slideUp("fast");
+                });
+            });
+        </script>
+
+        <ul id="btn_list">
+            <li title="本商品淘宝链接" style="width: 146px; height: 29px; float: left; margin-right:5px;">
+<!-- {if $goods.taobao_url} --><a href="{$goods.taobao_url}" target="_blank" ><img src="{res file=images/taobao_1.gif}" /></a><!-- {else} --><img src="{res file=images/taobao_2.gif}" /><!-- {/if} --></li>
+
+            <li title="本商品拍拍链接" style="float:left;">
+<!-- {if $goods.paipai_url} --><a href="{$goods.paipai_url}" target="_blank" ><img src="{res file=images/paipai_1.gif}" /></a><!-- {else} --><img src="{res file=images/paipai_2.gif}" /><!-- {/if} --></li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="ware_text">
+        <div class="rate">
+            <span>价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格： </span><span class="fontColor3" ectype="goods_price" {if $integral_open}{if $goods.bargin_price} style="text-decoration:line-through;color:red;font-size:14px;" {/if}{/if}>&nbsp;{$goods._specs.0.price|price}&nbsp;</span><br />
+            {if $integral_open}{if $goods.bargin_price}<span>{$lang.bargin_price}</span>： <span class="fontColor3" ectype="goods_price">{$goods.bargin_price|price}{if $goods.integral_state}+{$goods.max_exchange}{$lang.jifen}{/if}</span><br />{/if}{/if}
+            <span>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌： </span>{$goods.brand|escape}<br />
+            标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;签： &nbsp;&nbsp;<!--{foreach from=$goods.tags item=tag}-->{$tag}&nbsp;&nbsp;&nbsp;<!--{/foreach}--><br />
+            {$lang.sale_situation}： {$sales_info}{$comments}<br />
+            {$lang.region}： {$store.region_name|escape}<br />
+            
+            <!-- add by tyioocom-->
+            {if $integral_open}{if $goods.has_integral}<span>送&nbsp;&nbsp;积&nbsp;&nbsp;分</span>： 单件送<span style="color:red;">{$goods.has_integral}</span>积分{/if}{/if}
+            
+        </div>
+
+        <div class="handle">
+            <!--{if $goods.spec_qty gt 0}-->
+            <ul>
+                <li class="handle_title">{$goods.spec_name_1|escape}: </li>
+            </ul>
+            <!--{/if}-->
+            <!--{if $goods.spec_qty gt 1}-->
+            <ul>
+                <li class="handle_title">{$goods.spec_name_2|escape}: </li>
+            </ul>
+            <!--{/if}-->
+            <ul>
+                <li class="handle_title">{$lang.quantity}: </li>
+                <li>
+                    <input type="text" class="text width1" name="" id="quantity" value="1" />
+                    {$lang.unit}{$lang.left_bracket}{$lang.stock}<span class="stock" ectype="goods_stock">{$goods._specs.0.stock}</span>{$lang.unit}{$lang.right_bracket}
+                </li>
+            </ul>
+            <!--{if $goods.spec_qty gt 0}-->
+            <ul>
+                <li class="handle_title">{$lang.your_select}: </li>
+                <li class="aggregate" ectype="current_spec"></li>
+            </ul>
+            <!--{/if}-->
+        </div>
+
+        <ul class="ware_btn">
+            <div class="ware_cen" style="display:none">
+                <div class="ware_center">
+                    <h1>
+                        <span class="dialog_title">{$lang.add_to_cart_ok}</span>
+                        <span class="close_link" title="{$lang.close}" onmouseover="this.className = 'close_hover'" onmouseout="this.className = 'close_link'" onclick="slideUp_fn();"></span>
+                    </h1>
+                    <div class="ware_cen_btn">
+                        <p class="ware_text_p">{$lang.cart_status}</p>
+                        <p class="ware_text_btn">
+                            <input type="submit" class="btn1" name="" value="{$lang.view_cart}" onclick="location.href='{$site_url}/index.php?app=cart'" />
+                            <input type="submit" class="btn2" name="" value="{$lang.continue_buy}" onclick="$('.ware_cen').css({'display':'none'});" />
+                        </p>
+                    </div>
+                </div>
+                <div class="ware_cen_bottom"></div>
+            </div>
+
+            <li class="btn_c1" title="{$lang.buy_now}"><a href="javascript:buy_direction();"></a></li>
+            <li class="btn_c2" title="{$lang.add_to_cart}"><a href="javascript:buy();"></a></li>
+            <br/>
+            <li class="btn_c4"><a href="index.php?app=ss_jifen&act=song_jifen&id={$store.store_id}" target="_blank" ></a></li>
+            <li class="btn_c3" title="{$lang.add_to_favorite}"><a href="javascript:collect_goods({$goods.goods_id});"></a></li>
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+</div>

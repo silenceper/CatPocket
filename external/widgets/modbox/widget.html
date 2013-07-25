@@ -1,0 +1,32 @@
+<style>
+.bl{_display:inline;display:inline-block;width:30px;height:15px;vertical-align:middle;background:url("{res file=images/main/T11BOuXjJtXXXXXXXX-30-12.png}") no-repeat left top;font:10px 'arial';color:#fff;line-height:10px;margin-top:2px;padding-left:8px;}
+</style>
+<div id="eight-list" class="grid-c710s270 layout">
+  <div class="col-main">
+    <div class="main-wrap">
+      <div class="characteristic modbox">
+        <div class="modbox-item" style="border-bottom:1px dotted rgb(218, 218, 218);">
+          <div class="hd"> <span><img src="{$widget_data.image_url}"></span> <a href="{url app=search&cate_id=$widget_data.cate_id}" hidefocus="true">{$widget_data.cate_name}</a> </div>
+          <div class="bd">
+            <div class="items clearfix"> 
+              <!--{foreach from=$widget_data.data_info.data item=goods key=key name=privs1}--> 
+             
+              <a  <!--{if $smarty.foreach.privs1.index eq 0}-->class="first"<!--{/if}--> href="{url app=goods&id=$goods.goods_id}" target="_blank">
+              
+              <img title="{$goods.goods_name|escape}" alt="{$goods.goods_name|escape}" width="220" height="220" src="{$goods.default_image}">
+              <p class="title" title="{$goods.goods_name|escape}" style="height:35px; vertical-align:middle;">{$goods.goods_name_1|escape}</p>
+              <p class="price"><del>{$goods.price|price}</del> <span class="salescount">已成交&nbsp;{$goods.sales}&nbsp;件</span> </p>
+              <p class="price qz-price"> <em>{$goods.bargin_price}</em>{if $goods.integral_state==1}+{$goods.max_exchange}<span class="coin">积分</span>{/if}<span class="favorable" title="送积分">{$goods.has_integral}</span></p>
+
+
+              </a>
+              
+              <!--{/foreach}--> 
+            </div>
+            <div class="modbox-catalog"> <a href="{url app=search&cate_id=$widget_data.cate_id}" target="_blank">查看全部<span>{$widget_data.data_info.count}</span>款折扣商品</a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

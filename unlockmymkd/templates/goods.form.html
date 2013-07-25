@@ -1,0 +1,79 @@
+{include file="header.html"}
+<script type="text/javascript" src="index.php?act=jslang"></script>
+
+<div id="rightTop">
+  <p>{$lang.goods}</p>
+  <ul class="subnav">
+    <li><a class="btn1" href="index.php?app=goods">{$lang.all_goods}</a></li>
+    <li><a class="btn1" href="index.php?app=goods&amp;closed=1">{$lang.closed}</a></li>
+    <li><span>{$lang.unchecked}</span></li>
+  </ul>
+</div>
+<div class="info">
+  <form method="post" id="store_form">
+    <table class="infoTable">
+      <tr>
+        <th class="paddingT15">{$lang.store_name}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.store_name}</td>
+      </tr>
+      <tr>
+        <th class="paddingT15">{$lang.goods_name}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.goods_name}</td>
+      </tr>
+      <tr>
+        <th class="paddingT15">{$lang.cate_name}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.cate_name}</td>
+      </tr>
+      <tr>
+        <th class="paddingT15">{$lang.brand}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.brand}</td>
+      </tr>
+      <tr>
+        <th class="paddingT15">{$lang.price}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.price|price}</td>
+      </tr>
+      <tr>
+        <th class="paddingT15">{$lang.bargin_price}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.bargin_price|price}</td>
+      </tr>
+      <tr>
+        <th class="paddingT15">{$lang.cat_food}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.cat_food}</td>
+      </tr>
+      <tr>
+      	<th class="paddingT15"> {$lang.taobao_url}:</th>
+        <td class="paddingT15 wordSpacing5">{$goods_list.taobao_url}</td>
+      </tr>
+      <tr>
+         <th class="paddingT15"> {$lang.paipai_url}:</th>
+         <td class="paddingT15 wordSpacing5">{$goods_list.paipai_url}</td>
+      </tr>
+      <tr>
+          <th class="paddingT15">{$lang.add_time}:</th>
+          <td class="paddingT15 wordSpacing5">{$goods_list.add_time|date:complete}</td>
+      </tr>
+      <tr id="tr_close_reason">
+          <th class="paddingT15" valign="top">{$lang.close_reason}:</th>
+          <td class="paddingT15 wordSpacing5"><label for="close_reason"></label>
+              <textarea name="close_reason" id="close_reason" name="close_reason"></textarea></td>
+      </tr>
+      <tr>
+        <th class="paddingT15"> {$lang.caozuo}:</th>
+        <td class="paddingT15 wordSpacing5">
+          <label for="true">
+          <input name="is_true" type="radio" id="true" value="1" {if $goods_list.is_checked==1}checked="checked"{/if} />
+          {$lang.true}</label>
+          <label for="false">
+          <input type="radio" name="is_true" value="2" id="false" {if $goods_list.is_checked==0}checked="checked"{/if} />
+          {$lang.false}</label>
+        </td>
+      </tr>
+      <tr>
+        <th></th>
+        <td class="ptb20"><input class="formbtn" type="submit" name="Submit" value="{$lang.submit}" />
+          <input class="formbtn" type="reset" name="Reset" value="{$lang.reset}" /></td>
+      </tr>
+    </table>
+  </form>
+</div>
+{include file="footer.html"}

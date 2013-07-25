@@ -1,0 +1,113 @@
+{include file=member.header.html}
+<style type="text/css">
+.top_tab{width:400px;float:left;border:solid 1px #CCCCCC;height:100%}
+.top_menu{height:30px;background-color:#EDEDED;line-height:30px;padding-left:20px;border:solid 1px #999999;font-weight:bold;color:#F60}
+.setting{float:right;width:100px;border-left:#CCCCCC 1px solid;height:267px;}
+.setting h3{padding:5px;}
+.con_cz{float:left;padding:50px 0 0 10px;}
+.con_cz but{padding:10px 0 0 10px}
+
+.t_class tr td {border:1px solid #eee;padding:5px; text-align:center}
+</style>
+<div class="content">
+    {include file=member.menu.html}
+    <div id="right">{include file=member.submenu.html}
+
+        <div class="wrap margin1">
+            <div class="public table">
+				<div class="information_index" style="overflow:hidden; margin: 0px 0 -15px;">
+                    <span>您现有积分：<span style="color:#FF6600;font-size:14px;font-weight:bold;">{$user_jf}</span></span>
+                </div>
+             </div>
+        </div>
+    <!--{if $user_name!=""}-->
+           <div class="wrap">
+            <div class="public table">
+            <h3 class="title" style="margin: -10px 0 20px; color:#3E3E3E">送出积分</h3>
+                  <div style="color:#646665;float:left;font-size:12px;font-weight:normal;line-height:30px;">
+				  <form method="post" >
+                  <input type="hidden" name="app" value="ss_jifen" />
+                  <input type="hidden" name="act" value="song_jifen_info" />
+                  
+				  商家名称：<span>{$user_name}</span>
+                  <input type="hidden" name="seller_name" id="seller_name" value="{$user_name}"/>
+				  <br/>
+				  送出积分数：
+                  <input name="jifen_count" type="text"/>
+                  <input type="submit" value="送出积分" />
+                  </form>
+             </div>
+			</div>
+           </div>	
+           <!--{/if}-->
+           
+           <div class="wrap">
+            <div class="public table">
+              <table class="t_class">
+
+                <tr class="tatr1">
+                    <td width="150">送出积分</td>
+                    <td align="left" width="80">收到积分</td>
+                    <td align="left">积分数</td>
+                    <td align="left">送出时间</td>
+                    <td align="left">状态</td>
+                    <td align="left">操作</td>
+                </tr>
+
+                <!--{foreach from=$ss_jifen_info item=ss_jifen}-->
+                <tr>
+                    <td width="150">{$ss_jifen.buyer_name}</td>
+                    <td align="left" width="80">{$ss_jifen.seller_name}</td>
+                    <td align="left">{$ss_jifen.jifen}</td>
+                    <td align="left">{$ss_jifen.add_time|date:complete}</td>
+                    <!--{if $ss_jifen.ss_status==0}-->
+                    <td align="left">积分送出处理</td>
+                    <td align="left">
+					<a href="index.php?app=ss_jifen&act=cancel_song_jifen&ss_id={$ss_jifen.ss_id}">取消送出积分</a>
+					<a href="index.php?app=ss_jifen&act=lj_song_jifen&ss_id={$ss_jifen.ss_id}">立即送出积分</a>
+					</td>
+                    <!--{/if}-->
+                    <!--{if $ss_jifen.ss_status==1}-->
+                    <td align="left">取消送出积分</td>
+                    <td align="left">无可用操作</td>
+                    <!--{/if}-->
+                    <!--{if $ss_jifen.ss_status==2}-->
+                    <td align="left">商家发起申诉</td>
+                    <td align="left">无可用操作</td>
+                    <!--{/if}-->
+                    <!--{if $ss_jifen.ss_status==3}-->
+                    <td align="left">积分交易完成</td>
+                    <td align="left">无可用操作</td>
+                    <!--{/if}-->
+                    <!--{if $ss_jifen.ss_status==4}-->
+                    <td align="left">积分交易取消</td>
+                    <td align="left">无可用操作</td>
+                    <!--{/if}-->
+                </tr>
+                <!--{foreachelse}-->
+                <tr>
+                    <td colspan="6">
+                        {$lang.no_records}
+                    </td>
+                </tr>
+                <!--{/foreach}-->
+                <!--{if $page_info.page_count gt 1}-->
+                <tr>
+                    <td colspan="6">
+                        {include file=member.page.bottom.html}
+                    </td>
+                </tr>
+              <!--{/if}-->
+              </table>
+              </div>
+           </div>	
+
+        <div class="clear"></div>
+        <div class="adorn_right1"></div>
+        <div class="adorn_right2"></div>
+        <div class="adorn_right3"></div>
+        <div class="adorn_right4"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+{include file=footer.html}

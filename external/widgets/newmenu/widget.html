@@ -1,0 +1,29 @@
+<div class="col-sub">
+  <div class="box">
+    <div class="lmenu">
+      <div class="new-menu">
+        <div class="title">
+          <h4 style="width:152px;">全部商品分类</h4>
+        </div>
+        <div class="content" style="width:160px;margin-top:0px;"> 
+          
+          <!-- {foreach from=$widget_data.p_info item=category key=keys} -->
+          <dl>
+            <dt><a style="color:#000" href="{url app=search&cate_id=$category.cate_id}">{$category.cate_name|escape}</a></dt>
+            <dd style="float:left;">
+              <!-- {foreach from=$widget_data.c_info item=child key=key} --> 
+              <!--{if $child.parent_id==$category.cate_id}--> 
+              
+              <span> <a href="{url app=search&cate_id=$child.cate_id}">{$child.cate_name|escape}</a> </span> 
+             
+              <!--{/if}--> 
+              <!-- {/foreach} --> 
+             </dd>
+          </dl>
+          <!-- {/foreach} --> 
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

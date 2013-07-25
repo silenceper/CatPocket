@@ -1,0 +1,9 @@
+/* CSS Document */
+.leftkf .bd{width:188px;padding:0px;margin-left:8px;overflow:hidden;}
+.leftkf .des{padding:10px;width:168px;text-align:left;}
+.leftkf .des .time_range{padding:3px;line-height:25px;color:#7E7E7E;width:100%;height:auto;overflow:hidden;}
+.leftkf .stitile{width:168px;height:25px;font-weight:bold;line-height:25px;border-bottom:1px dotted #CCC;text-align:left;margin:0px auto;color:#7E7E7E;}
+.leftkf ul{width:168px;margin:0px auto;zoom:1;padding:5px 0px;}
+.leftkf ul:after{content:"\20";clear:both;display:block;height:0px;}
+.leftkf ul li{float:left;width:82px;height:25px;line-height:25px;text-align:left;}
+.leftkf .adimg a{width:168px;height:60px;float:left;margin:0;padding:0;background:url(#) no-repeat;}

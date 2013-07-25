@@ -1,0 +1,14 @@
+                <h4 class="add_title"><b class="ico">{$lang.your_cart_goods}(原价)</b></h4>
+                <dl class="article" style="padding-top:10px;">
+                    <dt style="line-height:15px;">{$lang.store}:&nbsp;<a href="{url app=store&store_id=$goods_info.store_id}" title="{$goods_info.store_name|escape}" target="_blank">{$goods_info.store_name_1|escape}</a></dt>
+                    <!--{foreach from=$goods_info.items item=goods}-->
+                    <dd style="padding-top:5px;">
+                        <p><a href="{url app=goods&id=$goods.goods_id}" target="_blank"><img src="{$goods.goods_image}" alt="{$goods.goods_name|escape}" width="65" height="65" /></a></p>
+                        <h3>
+                            <a target="_blank" href="{url app=goods&id=$goods.goods_id}" title="{$goods.goods_name|escape}" style="height:20px;">{$goods.goods_name|escape}</a>
+                            <span class="attr">{$goods.specification|escape}</span>
+                            <b>原价：{$goods.quantity}{$lang.goods_unit}<br /><span class="money">{$goods.subtotal|price}</span></b>
+                        </h3>
+                    </dd>
+                    <!--{/foreach}-->
+                </dl>

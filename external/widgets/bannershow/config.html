@@ -1,0 +1,30 @@
+<script type="text/javascript">
+var _d = DialogManager.get('config_dialog');
+_d.setWidth(800);
+_d.setPosition('center');
+</script>
+<table width="98%">
+<tr width="98%">
+<td width="33%"><label>上传banner图片:(<span>支持 gif|jpg|jpeg|png 格式</span>)</label></td>
+<td width="33%"><label>链接地址:</label></td>
+<td width="32%"><label>标题:</label></td>
+</tr>
+<tr style="width:98%;height:25px;padding-top:5px">
+<td width="33%"><p><input type="file" name="ad_image_file1" /><input type="hidden" name="ad_image_url1" value="{$options.ad_image_url1}" /></p>
+    <!-- {if $options.ad_image_url1} --><p><img src="{$options.ad_image_url1}" height="20" /></p><!-- {/if} --></td>
+<td width="33%"> <p><input type="text" name="ad_link_url1" value="{$options.ad_link_url1}" /></p></td>
+<td width="32%"> <p><input type="text" name="ad_text1" value="{$options.ad_text1}" /></p></td>
+</tr>
+<tr style="width:98%;height:25px;padding-top:5px">
+<td width="33%"><p><input type="file" name="ad_image_file2" /><input type="hidden" name="ad_image_url2" value="{$options.ad_image_url2}" /></p>
+    <!-- {if $options.ad_image_url2} --><p><img src="{$options.ad_image_url2}" height="20" /></p><!-- {/if} --></td>
+<td width="33%"> <p><input type="text" name="ad_link_url2" value="{$options.ad_link_url2}" /></p></td>
+<td width="32%"> <p><input type="text" name="ad_text2" value="{$options.ad_text2}" /></p></td>
+</tr>
+<tr style="width:98%;height:25px;padding-top:5px">
+<td width="33%"><p><input type="file" name="ad_image_file3" /><input type="hidden" name="ad_image_url3" value="{$options.ad_image_url3}" /></p>
+    <!-- {if $options.ad_image_url3} --><p><img src="{$options.ad_image_url3}" height="20" /></p><!-- {/if} --></td>
+<td width="33%"> <p><input type="text" name="ad_link_url3" value="{$options.ad_link_url3}" /></p></td>
+<td width="32%"> <p><input type="text" name="ad_text3" value="{$options.ad_text3}" /></p></td>
+</tr>
+</table>

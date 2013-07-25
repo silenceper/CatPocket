@@ -1,0 +1,66 @@
+{include file=member.header.html}
+<div class="content">
+    <div class="totline"></div><div class="botline"></div>
+    {include file=member.menu.html}
+    <div id="right">
+          <ul class="tab">
+                <li class="normal"><a href="index.php?app=my_money&act=loglist">{$lang.wodezhanghu}</a></li>
+                <li class="normal"><a href="index.php?app=my_money&act=buyer">{$lang.mairuchaxun}</a></li>
+				<li class="normal"><a href="index.php?app=my_money&act=seller">{$lang.maichuchaxun}</a></li>
+				<li class="normal"><a href="index.php?app=my_money&act=intolog">{$lang.zhuanzhangchaxun}</a></li>
+				<li class="active">{$lang.otherchaxun}</li>
+          </ul>
+        <div class="wrap">
+            <div class="public table">	
+			
+                <table>
+                    <!--{if $my_money}-->
+                    <tr class="line_bold">
+                        <th width="40px"></th>
+                        <th class="align1">{$lang.caozuorizhi}</th>
+                        <th>{$lang.mubiaoyonghu}</th>
+                        <th>{$lang.dingdanhao}</th>
+                        <th>{$lang.jine}</th>
+                        <th align="center">{$lang.caozuoshijian}</th>
+                    </tr>
+                    <!--{/if}-->
+                    <!--{foreach from=$my_money item=val name=v}-->
+                    <!--{if $smarty.foreach.v.last}--><tr class="line_bold"><!--{else}--><tr class="line"><!--{/if}-->
+                        <td class="align2"></td>
+                        <td class="link1">{$val.log_text}</td>
+						<td align="center">{$val.buyer_name}</td>
+                        <td align="center">{$val.order_sn}</td>
+						<td align="center">{$val.money_zs}{$val.yuan}</td>
+                        <td align="center">{$val.add_time|date:Y-m-d H:i}</td>
+                    </tr>
+                    <!--{foreachelse}-->
+                    <tr>
+                        <td colspan="6" class="member_no_records padding6">{$lang.$smarty.get.act}{$lang.no_records}</td>
+                    </tr>
+
+                    <!--{/foreach}-->
+                    <!--{if $my_money}-->
+                    <tr>
+                        <td colspan="6">
+                           <p class="position2">
+                                {include file=member.page.bottom.html}
+                            </p>
+                         </td>
+                    </tr>
+                    <!--{/if}-->
+                </table>
+            </div>
+            <div class="wrap_bottom"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="adorn_right1"></div>
+        <div class="adorn_right2"></div>
+        <div class="adorn_right3"></div>
+        <div class="adorn_right4"></div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<iframe id='iframe_post' name="iframe_post" frameborder="0" width="0" height="0">
+</iframe>
+{include file=footer.html}

@@ -1,0 +1,65 @@
+{include file="header.html"}
+<div id="rightTop">
+    <p>{$lang.index_jifenliebiao}</p>
+    <ul class="subnav">
+		<li><span>{$lang.index_jifenliebiao}</span></li>
+		<li><a class="btn3" href="index.php?app=integral&act=user_jifen_log">积分流水</a></li>
+		
+    </ul>
+</div>
+
+<div class="mrightTop">
+  <div class="fontl">
+    <form method="get">
+       <div class="left">
+          <input type="hidden" name="app" value="integral" />
+          <input type="hidden" name="act" value="index" />
+          <select class="querySelect" name="field_name">{html_options options=$query_fields selected=$smarty.get.field_name}
+          </select>
+          <input class="queryInput" type="text" name="field_value" value="{$smarty.get.field_value|escape}" />
+          <input type="submit" class="formbtn" value="{$lang.query}" />
+      </div>
+      <!--{if $filtered}-->
+      <a class="left formbtn1" href="index.php?app=integral">{$lang.cancel_query}</a>
+      <!--{/if}-->
+    </form>
+  </div>
+  <div class="fontr">{include file=page.top.html}</div>
+</div>
+<div class="tdare">
+  <table width="100%" cellspacing="0" class="dataTable">
+    <!--{if $users}-->
+    <tr class="tatr1">
+      <td width="20" class="firstCell"><input type="checkbox" class="checkall" /></td>
+      <td>{$lang.user_name}</td>
+      <td>{$lang.user_integral}</td>
+      <td>{$lang.user_storename}</td>
+      <td>{$lang.seller_edu}</td>
+      <td class="handler">{$lang.handler}</td>
+    </tr>
+    <!--{/if}-->
+    <!--{foreach from=$users item=user}-->
+    <tr class="tatr2">
+      <td class="firstCell"><input type="checkbox" class="checkitem" value="{$user.user_id}" /></td>
+      <td>{$user.user_name|escape}</td>
+      <td><font color="#FF0000">{$user.jifen}</font></td>
+      <td>{$user.store_name}</td>
+      <td><font color="#FF0000">{$user.seller_edu}</font></td>
+      <td class="handler">
+      <a href="index.php?app=integral&amp;act=recharge&amp;id={$user.user_id}">{$lang.recharge}</a>
+      </td>
+    </tr>
+    <!--{foreachelse}-->
+    <tr class="no_data">
+      <td colspan="5">{$lang.no_data}</td>
+    </tr>
+    <!--{/foreach}-->
+  </table>
+  <!--{if $users}-->
+  <div id="dataFuncs">
+    <div class="pageLinks">{include file=page.bottom.html}</div>
+    <div class="clear"></div>
+  </div>
+  <!--{/if}-->
+</div>
+{include file="footer.html"}
